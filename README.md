@@ -37,8 +37,7 @@ lerobot-teleoperate \
   --teleop.type=so101_leader \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_leader \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}}" \
-  --display_data=true
+  --display_data=false
 ```
 
 ## Record
