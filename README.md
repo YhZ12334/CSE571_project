@@ -76,3 +76,7 @@ $HOME/.cache/huggingface/lerobot/CLM0215/pick_cube_test2 \
 --repo-type=dataset
 ```
 
+## Low_level point to point
+```bach
+python low_level.py   --port /dev/ttyACM0   --x 0.24   --y 0.10   --z 0.24   --dt 0.05   --max-step 0.003   --max-relative-target 1.5   --position-weight 1.0   --orientation-weight 0.00   --no-calibrate
+```
