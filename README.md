@@ -80,5 +80,8 @@ $HOME/.cache/huggingface/lerobot/CLM0215/pick_cube_test2 \
 ```bach
 python low_level.py   --port /dev/ttyACM0   --x 0.24   --y 0.10   --z 0.24   --dt 0.05   --max-step 0.003   --max-relative-target 1.5   --position-weight 1.0   --orientation-weight 0.00   --no-calibrate
 ```
+
 ## Low_level_new trajectory_following
-python low_level_new.py --port /dev/ttyACM0 --points "[(0.22,0.08,0.22),(0.24,0.10,0.22),(0.24,0.10,0.18)]"  --gripper-actions open --dt 0.05 --position-weight 1.0 --orientation-weight 0.0 --ik-pos-tol 0.02 --exec-pos-tol 0.025 --interp-max-step-deg 1.0 --max-relative-target 5.0 --no-calibrate
+```bash
+python low_level_new.py --port /dev/ttyACM0 --points "[(0.22,0.08,0.22),(0.24,0.10,0.22),(0.24,0.10,0.18)]"  --gripper-actions "open,open,close" --dt 0.05 --position-weight 1.0 --orientation-weight 0.0 --ik-pos-tol 0.02 --exec-pos-tol 0.025 --interp-max-step-deg 1.0 --max-relative-target 5.0 --no-calibrate
+```
